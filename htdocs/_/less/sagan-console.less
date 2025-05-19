@@ -1,0 +1,72 @@
+//@import "bootstrap.less";
+
+.preference-info {
+	padding-bottom: 15px;
+
+	h4 {
+		margin-top: 0;
+	}
+
+	p:last-child {
+		margin-bottom: 0;
+	}
+}
+
+#log-ingestion {
+	margin-bottom: 0;
+
+	.ingestion-data {
+		margin: 25px auto 0;
+		border: 1px solid #dedede;
+		.rounded-corners(8px);
+		padding: 22px 0;
+		max-width: 300px;
+
+		h4 {
+			font-size: 20px;
+			color: #333;
+			font-weight: 300;
+			margin-top: 0;
+			margin-bottom: 14px;
+		}
+
+		.total-ingestion,
+		.ingestion-cost {
+			font-family: @font-family-monospace;
+			font-size: 40px;
+			color: darken(@off-border-color, 5%);
+			line-height: 1;
+			height: 40px;
+
+			i {
+				color: @text-color;
+			}
+		}
+	}
+
+	#ingestion-chart {
+		min-height: 400px;
+		margin-top: 40px;
+
+		tbody {
+			& > tr > th,
+			& > tr > td {
+				font-size: 12px;
+			}
+		}
+
+		.top_chart_loader {
+			min-height: 0;
+			padding-top: 180px;
+
+			.item-number {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.timezone-notice {
+		font-size: 11px;
+		text-transform: uppercase;
+	}
+}

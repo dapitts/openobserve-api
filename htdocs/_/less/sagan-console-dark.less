@@ -1,0 +1,25 @@
+@import "variables.less";
+@import "variables_dark.less";
+@import "bootstrap.less";
+@import "sagan-console.less";
+
+#log-ingestion {
+	.ingestion-data {
+		border: 1px solid @panel-border-color;
+
+		h4 {
+			color: #f2f2f2;
+		}
+
+		.total-ingestion,
+		.ingestion-cost {
+			color: lighten(@off-border-color, 10%);
+		}
+	}
+
+	#ingestion-chart {
+		.highcharts-title {
+			text-transform: none;
+		}
+	}
+}
